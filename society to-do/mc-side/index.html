@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/8eb913ad60.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='style2.css'>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+        <header class="header" id='date'></header>
+    <main>
+        <section id="entry-text" class="card">
+            <p>Society's Job database!</p>
+            <p>Nothing New!</p>
+        </section>
+    </main>
+    <table>
+        <tr>
+            <th>SR.NO</th>
+            <th>TASK</th>
+            <th >description</th>
+            <th>priority</th>
+            <th>Open Date</th>
+            <th>Close Date</th>
+            <th>pending</th>
+            <th>completed</th>
+            <th>Complete</th>
+            <th>Updates</th>
+        </tr>   
+    </table>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCCPOJh9iuUa6AsC6UNYzLcjAAh50eoHLI",
+          authDomain: "soc-todo-list.firebaseapp.com",
+          databaseURL: "https://soc-todo-list.firebaseio.com",
+          projectId: "soc-todo-list",
+          storageBucket: "soc-todo-list.appspot.com",
+          messagingSenderId: "487393270053",
+          appId: "1:487393270053:web:889d206d2ddc6bc13622cc",
+          measurementId: "G-GQEMHKC1Q3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db= firebase.firestore();
+      </script>
+    <script src="app2.js"></script>
+</body>
+</html>

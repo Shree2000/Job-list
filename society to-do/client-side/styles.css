@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+::-webkit-scrollbar{
+    width:7px;
+    height:7px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color:rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 2.5px 2px rgba(0 0 0 0.5);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb{
+background-color: rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+height:20%;
+}
+
+body{
+   
+    background:url('media/img1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+     /* align-items: center; */
+    min-height: 100vh;
+    overflow: auto;
+}
+.content
+{
+    box-sizing: content-box;
+    margin: 20px 0;
+    height: 95%;
+    width: 95%;
+    border-radius: 8px;
+    background: white;
+    
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px 8px 0px 0px;
+    background: #438a5e;
+    height: 50px;
+   
+}
+header a{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 6.5px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+header a:active, header a:visited{
+    text-decoration: none;
+}
+header a:hover
+{
+  color: #fff; 
+  text-decoration: none;
+}
+header button{
+    position: relative;
+    bottom: 8px;
+    size: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    height: 90%;
+    outline: none;
+}
+header button:active{
+    outline: none;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0, 0.7);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    transition-delay:  .4s;
+}
+.close
+{
+   
+    position: absolute;
+    top: 0;
+    font-size: 42px;
+    right: 14px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    
+
+}
+.modal-content
+{
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    
+    
+}
+
+label {
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #464646;
+}
+  
+input,select {
+    font: inherit;
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.2rem;
+    color: #383838;
+    width: 90%
+}
+
+input:focus , select:focus{
+    outline: none;
+    background: #f2f2f0;
+}
+
+  
+.btn1 {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #00329e;
+    background: #00329e;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    margin: 0 0.5rem;
+    outline: none;
+}
+
+.btn1:hover,
+.btn1:active {
+    background: #f67722;
+    border-color: #f67722;
+}
+
+.btn--passive {
+    color: #00329e;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.btn--passive:hover,
+.btn--passive:active {
+    background: #aec6f8;
+}
+.modal .modal__content {
+    padding: 1rem;
+
+}
+.modal .modal__actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+#entry-text {
+    width: 40rem;
+    margin: 2rem auto;
+    max-width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    display: block;   
+}
+
+#entry-text p 
+{
+font-size: 1.5rem;
+text-align: center;
+font-weight: 600;
+}
+
+.div1,.div2
+{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.div1 h1,.div2 h1
+{
+font-size: 2rem;
+position: relative;
+display:inline-block;
+border: 1px solid #438a5e;
+padding: 0 20px;
+border-radius: 5px;
+}
+hr{
+    border: none;
+    border-top: 2px solid black;
+}
+.div1 h1:hover,.div2 h1:hover{
+    background-color: #184d47;
+    color:#fff
+}
+li
+{
+    list-style:none;
+}
+.li-wrapper{
+    text-align: left;
+    box-sizing:content-box;
+    background:white;
+    max-width:60%;
+    margin: 10px auto;
+    position:relative;
+    padding-bottom: 10px ;
+    border-radius:8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.56);
+}
+.li-title{
+    position:relative;
+    top:2px;
+    text-decoration:underline;
+    color:#272727;
+    margin-left: 10px;
+}
+.li-btn{
+    position:absolute;
+    right:20px;
+    bottom:5px;
+    background:transparent;
+    border:2px solid #8cba51;
+    border-radius:4px;
+    outline:none;
+    padding: 0px 5px;
+    user-select: none;
+    height:35px;
+
+}
+.li-btn:active,.li-btn:focus{
+    outline:none;
+    border:2px solid #8cba51;
+}
+.li-btn:hover{
+    color:#fff;
+    background-color:#8cba51;
+}
+.li-pr{
+    color:#231903;
+    margin-left: 10px;
+}
+
+.li-p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    
+}
+.dateopen,.dateclose,.input{
+    font-size:15px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+@media (max-width:700px)
+{
+    .modal-content{
+        width:300px;
+        font-size:12px;
+        height:325px;
+    }
+    .content{
+        width:90%;
+    }
+    header, header a{
+        font-size:22px;
+        height:45px;
+    }
+    header button{
+        height:80%;
+        top:-5px;
+        font-size:12px;
+        text-align: center;
+        outline: none;
+        size:10px;
+    }
+    #entry-text{
+        width:200px;
+    }
+    #entry-text p{
+        font-size:17px;
+    }
+    
+    .div1 h1,.div2 h1
+    {
+        font-size:1.4rem;
+        border-radius: 5px;
+    }
+    .li-btn{
+        /* box-sizing: content-box; */
+        
+        font-size:10px;
+        height:20px;
+        bottom:3px;
+        padding: 0px 15px;
+    }
+    .li-p{
+        font-size:15px;
+        margin-top: -10px;
+        padding:8px 5px;
+
+    }
+    .li-title{
+        top:1px;
+        font-size:15px;
+    }
+    .li-pr{
+        font-size:15px;
+        margin-top: -15px;
+        padding-bottom: 12px;
+    
+
+    }
+    .li-wrapper{
+        min-height: 100px;
+    }
+}
+
+button
+{
+   margin:20px;
+   padding: 0 10px;
+   border: 2px solid #8cba51;
+   border-radius: 4px;
+   background: none;
+   height: 40px;
+   width: 80px; 
+}
+button:hover{
+    background: #8cba51;
+    color: #fff;
+    outline: none;
+    user-select: none;
+}
